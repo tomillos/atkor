@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Century Schoolbook L", Serif;
+}
+.container{
+  box-sizing: border-box;
+  max-width: 1366px;
+  padding: 0 40px 0 30px;
+  margin: auto;
+}
+.site-header{
+  height: 125px;
+  background-color: #FFFFDA;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+  margin-bottom: 35px;
+} 
+.site-header:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+.logo-container{
+ float: left;
+  height: 125px;
+  width: 97px;
+  background-color: #c84457;
+  position: relative;
+}
+.logo{
+  position: absolute;
+  bottom: -32px;
+  left: 0px;
+}
+
+
+.slogan{
+  box-sizing: border-box;
+  float: left;
+  height: 125px;
+  vertical-align: top;
+  padding-top:27px;
+  margin-left: 4%;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 36px;
+  color: #222;
+  text-align: right;
+  line-height: 35px;
+}
+.korshikova{
+ color: #9F1B2E;
+
+}
+.maria-mih{
+  font-size: 28px;
+}
+
+
+.header-menu{
+  box-sizing: border-box;
+  padding-top: 14px;
+  display: inline-block;
+  height: 125px;
+  margin-left: 4%;
+}
+.header-menu .nav{
+  padding-top: 17px;
+  padding-left: 0px;
+  padding-bottom: 14px;
+  margin: 0;
+  background-color: #BA3649;
+  color: #fff;
+  border-radius: 3px;
+}
+.header-menu .nav:after{
+  content: '';
+  display: table;
+  clear:both;
+}
+.header-menu .nav__item{
+  box-sizing: border-box;
+  float: left;
+  list-style: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.header-menu .nav__item:hover{
+  padding-bottom: 3px;  
+  border-bottom: 3px solid #FFFFDA;
+}
+.header-menu .nav__item.active{
+  padding-bottom: 3px;  
+  border-bottom: 3px solid #FFFFDA;
+}
+.header-menu .nav__item:first-child{
+  margin-left: 30px;
+}
+.header-menu .nav__item:last-child{
+  margin-right: 30px;
+}
+.header-menu .nav__item .fa{
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 3px;
+  color: #FFFFDA;
+}
+.header-menu .nav__link{
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+  font-size: 18px;
+  color: #FFFFDA;
+  text-shadow: 1px 1px 1px #333;
+  display: block;
+}
+.header-menu .nav__item-title{
+  font-weight: bold;
+}
+
+
+.contacts{
+  padding-top: 17px;
+  float: right;
+  text-align: right;
+  font-size: 22px;
+font-family: 'Cormorant Infant', serif;
+}
+.contacts__phone{
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+.contacts__code-phone{
+  font-size: 22px;
+  color: #777;
+}
+.contacts__email a{
+  color: #9F1B2E;
+  text-decoration: none;
+}
+
+
+.side-menu{
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+}
+.side-menu:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+.side-menu .nav{
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+.side-menu .nav__item{
+  margin-left: 50px;  
+}
+.side-menu .nav__title{
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  font-family: 'Cormorant Infant', serif;
+}
+.side-menu .nav__title .fa{
+  color: #c84457;
+  margin-right: 10px;
+  text-shadow: 1px 1px 1px #a4a4a4;
+}
+.side-menu .nav__red-sq{
+  width: 97px;
+  height: 5px;
+  background-color: #c84457;
+  border-radius: 2px;
+}
+.side-menu .nav__link{
+  text-decoration: none;  
+  color: #0057A5; 
+}
+.side-menu .nav__link:hover{
+  color: #9F1B2E;
+  font-weight: bold;
+}
+
+
+.content{
+  padding-left: 27%;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.content .article-title{
+  font-family: 'Cormorant Infant', serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.article__img_float-right{
+  float: right;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  border: 1px solid #333;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

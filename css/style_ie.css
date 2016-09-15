@@ -1,0 +1,402 @@
+.site-header
+{
+    border-bottom: 2px solid #000;
+}
+
+
+a img,
+a,
+img
+{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.site-header .header-caption-menu-container,
+.site-header .logo-container__link-wrapper,
+.site-header .header-caption,
+.site-header .header-menu
+{
+    float: left;
+    
+}
+.site-header .header-menu{
+	margin-left: 10px;
+}
+.site-header .header-caption
+{
+    margin-top: 10px;
+}
+
+.site-header .contacts
+{
+		margin-top: 10px;
+    float: right;
+}
+
+.main-contant-wrapper
+{
+    clear: both;
+}
+
+
+.site-header .contacts__phone
+ {
+	font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+}
+,
+.site-header .contacts__code-phone{
+    font-size: 18px;
+}
+
+
+
+.side-menu.side-menu-visible{
+	background-color: #fff;
+}
+.site-footer .badge,
+.site-footer__about-lawer,
+.site-footer__address{
+	float: left;
+}
+.site-footer__about-lawer,
+.site-footer__address{
+	margin-left: 3%;
+}
+
+
+
+@media only all and (max-width: 1181px) {
+        .header-caption-menu-container
+        {
+            display: block;
+        }
+     .header-menu .nav__item
+        {
+            display: table-cell;
+
+            box-sizing: border-box;
+            width: 33%;
+            margin: 0;
+        }
+
+    .header-menu .nav__item.services
+    {
+        display: none;
+    }
+        .header-caption,
+        .header-caption__surname,
+        .header-caption__name
+        {
+            font-size: 28px;
+
+            display: inline-block;
+            text-align: center;
+        }
+        .header-caption,
+        .header-caption__link-wrapper
+        {
+            display: block;
+            float: none;
+            overflow: hidden;
+
+        }
+ .site-header .header-menu{
+
+            display: block;
+
+            box-sizing: border-box;
+            width: 100%;
+            min-width: 100%;
+            float: none;
+            margin-left: 0;
+             overflow: hidden;
+        }
+        .header-menu .nav
+        {
+            display: table;
+
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0;
+
+            text-align: center;
+            margin-left: 0;
+        }
+        .header-menu .nav__item
+        {
+            display: table-cell;
+
+            box-sizing: border-box;
+            width: 33%;
+            margin: 0;
+        }
+        .header-menu .nav__item.active,
+        .header-menu .nav__item:hover
+        {
+            border-bottom: none;
+        }
+        .header-menu .nav__link
+        {
+            display: inline-block;
+
+            margin-left: 0;
+        }
+        .header-menu .nav__item.active .nav__link,
+        .header-menu .nav__link:hover
+        {
+            padding-bottom: 1px;
+
+            border-bottom: 2px solid #ffffda;
+        }
+        .header-menu .nav__item .fa
+        {
+            display: none;
+        }
+        .site-footer .flex-container
+        {
+            min-height: 125px;
+        }
+        .site-footer .badge,
+        .site-footer .site-footer__column:nth-child(2)
+        {
+            margin-right: 10px;
+        }
+
+}
+
+
+@media only all and (max-width: 1029px)
+    {
+.header-caption-menu-container {
+    text-align: center;
+}
+        .header-caption,
+        .header-caption__surname,
+        .header-caption__name
+        {
+            font-size: 25px;
+
+            display: inline-block;
+        }
+        .header-caption
+        {
+  
+            margin-bottom: 3px;
+        }
+
+
+        .flex-container
+        {
+            height: auto;
+        }
+
+        .site-header .logo-container,
+        .side-menu
+        {
+            display: none;
+        }
+        .content
+        {
+            padding-left: 0;
+        }
+        .header-menu .nav
+        {
+            display: table;
+
+            text-align: center;
+            vertical-align: middle;
+        }
+        .header-menu .nav__item
+        {
+            display: table-cell;
+            float: none;
+
+            box-sizing: border-box;
+            width: auto;
+            margin: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            vertical-align: middle;
+        }
+
+        .header-menu .nav__item .fa
+        {
+            font-size: 35px;
+
+            margin-bottom: 0;
+        }
+        .header-menu .nav__item.popup-menu,
+        .header-menu .nav__item .fa-bars
+        {
+            font-size: 28px;
+
+            display: inline-block;
+        }
+        .header-menu .nav__item .fa-bars-wraper
+        {
+            padding: 0 3px;
+
+            border: 2px solid #ffffda;
+            border-radius: 3px;
+        }
+        .header-menu .nav__item .fa-bars-wraper:hover
+        {
+            border: 2px solid #ffffda;
+        }
+        .header-menu .nav__item.popup-menu .nav__link:hover
+        {
+            padding-bottom: 0;
+
+            animation: rotate-bar-menu 1s infinite ease-in-out;
+
+            border-bottom: 0;
+        }
+        .main-contant-wrapper
+        {
+            position: relative;
+        }
+        .side-menu.side-menu-visible
+        {
+            position: absolute;
+            top: -43px;
+            left: 0;
+
+            display: block;
+
+            box-sizing: border-box;
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+
+            text-align: left;
+
+            border: 2px dotted #ba3649;
+            background-color: rgba(255,255,255,.9);
+        }
+        .side-menu.side-menu-visible .nav
+        {
+            display: inline-block;
+
+            box-sizing: border-box;
+            width: 32%;
+
+            text-align: left;
+            vertical-align: top;
+        }
+        .side-menu.side-menu-visible .nav h2 .fa
+        {
+            display: none;
+        }
+        .side-menu.side-menu-visible .nav__item
+        {
+            position: relative;
+
+            margin-left: 0;
+            padding-left: 5px;
+        }
+        .side-menu.side-menu-visible .nav__item:hover,
+        .side-menu.side-menu-visible .nav__link:hover
+        {
+            background-color: transparent;
+        }
+        .side-menu.side-menu-visible .nav__item:nth-of-type(2n+1)
+        {
+            background-color: #ddd;
+        }
+        .side-menu.side-menu-visible .nav__item
+        {
+            min-height: 2em;
+        }
+        .side-menu.side-menu-visible .nav__item-title:before
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            content: '-';
+        }
+        .side-menu.side-menu-visible .nav__red-sq
+        {
+            display: none;
+        }
+    }
+
+
+       @media only all and (max-width: 800px)
+    {
+
+        .site-header
+        {
+            height: auto;
+            text-align: center;
+        }
+        .site-header .flex-container
+        {
+            display: block;
+
+            height: auto;
+        }
+
+.header-caption-menu-container {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.header-caption{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+        .header-menu .nav
+        {
+            display: table;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+
+       .site-header .contacts{
+        	margin-left: 0;
+        	float: none;
+        	display: block;
+        	clear: both;
+            text-align: center;
+        }
+
+        .flex-container {
+    padding: 0 5px;
+}
+.main-contant-wrapper {
+
+    min-width: 320px;
+
+    padding: 0 5px 150px;
+}
+.header-menu .nav__item {
+    padding: 3px;
+}
+
+        .side-menu.side-menu-visible .nav
+        {
+            display: block;
+
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .site-footer .flex-container
+        {
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+        .site-footer .site-footer__about-lawer
+        {
+            display: none;
+        }
+
+}
